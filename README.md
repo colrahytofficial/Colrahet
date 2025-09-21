@@ -1,2 +1,2 @@
 # Colrahet
-Blooket, but b me and ChatGPT's help.
+Blooket, but by me and ChatGPT's help.
