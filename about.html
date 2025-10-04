@@ -1,41 +1,92 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Colrahet</title>
+  <title>Colrahet - About</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; }
-    header { background: #2a7ae2; color: white; padding: 20px; text-align: center; }
-    nav { background: #1f5bb5; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { padding: 40px; text-align: center; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+    }
+    header img {
+      width: 100px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-top: 0.5rem;
+      text-shadow: 2px 2px rgba(0,0,0,0.3);
+    }
+    nav {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav a {
+      background: #ff6b6b;
+      padding: 0.8rem 1.5rem;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #ff4f4f;
+      transform: translateY(-2px);
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #fff;
+      color: #333;
+      border-radius: 16px;
+      padding: 1.5rem;
+      width: 250px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
+  <header>
+    <img src="assets/PizzaImage" alt="Colrahet Logo">
+    <h1>About Colrahet</h1>
+  </header>
 
-<header>
-  <h1>About Colrahet</h1>
-</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="colrahys.html">Colrahys</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="colrahys.html">Colrahys</a>
-  <a href="play.html" class="play-btn">
-  <img src="assets/PizzaImage" alt="" width="28" height="28" style="vertical-align:middle; border-radius:50%;">
-  Play Now
-</a>
-
-</nav>
-
-<main>
-  <h2>ℹ️ What is Colrahet?</h2>
-  <p>Colrahet is my version of Blooket, built with help from ChatGPT. 
-     Instead of normal blooks, we use Colrahy blooks like <strong>Colrah</strong>, 
-     <strong>@gdspreadsheetspublic</strong>, and <strong>@DunkintheCat2025</strong>.</p>
-</main>
-
+  <div class="cards">
+    <div class="card">
+      <h3>What is Colrahet?</h3>
+      <p>Colrahet is a fun, Blooket-inspired game where you play mini-games with pizza-themed cards!</p>
+    </div>
+    <div class="card">
+      <h3>Why Play?</h3>
+      <p>Collect cards, host games, and challenge friends in quick, colorful rounds.</p>
+    </div>
+  </div>
 </body>
 </html>
